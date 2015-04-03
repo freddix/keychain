@@ -1,11 +1,11 @@
 Summary:	Key management application for SSH RSA/DSA keys
 Name:		keychain
-Version:	2.7.1
-Release:	2
+Version:	2.8.0
+Release:	1
 License:	GPL v2
 Group:		Applications/Networking
 Source0:	http://www.funtoo.org/archive/keychain/%{name}-%{version}.tar.bz2
-# Source0-md5:	07c622833192189f483cbaec287f9704
+# Source0-md5:	89a3771f39a8a9fd65f11c5fdd4c4b93
 URL:		http://www.funtoo.org/en/security/keychain/intro/
 BuildArch:	noarch
 Requires:	coreutils
@@ -38,7 +38,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog README.rst
+%doc ChangeLog README.md
 %attr(755,root,root) %{_bindir}/keychain
 %{_mandir}/man1/keychain.1*
 
